@@ -1,6 +1,9 @@
 import * as React from "react";
-import {Routes, Route, Navigate, Link } from 'react-router-dom';
-import Layout from 'components/Layout';
+import {Routes, Route, Navigate} from 'react-router-dom';
+import Tags from './views/Tags';
+import Money from './views/Money';
+import Statistics from './views/Statistics';
+import NotFound from './views/NotFound';
 
 
 
@@ -17,29 +20,5 @@ function App() {
 
   );
 }
-// App.js
-function NotFound(){
-  return (
-    <div>页面不存在</div>
-  )
-}
 
-function Tags() {
-  return (
-    <Layout>标签页面</Layout>
-  );
-}
-
-
-function Money() {
-  return (
-    <Layout>记账页面</Layout>
-  );
-}
-
-function Statistics() {
-  return (
-    <Layout>统计页面</Layout>
-  );
-}
 export default App;
