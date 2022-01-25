@@ -3,27 +3,45 @@ import {Routes, Route, Navigate, Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  border:1px solid red;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;
 const Main = styled.div`
-   border:1px solid green;
    flex-grow:1;
-  overflow: auto;
+   overflow: auto;
 `;
-const Nav = styled.nav`
-  border: 1px solid blue;
+const NavWrapper = styled.nav`
+  line-height: 2.4rem;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
   > ul {
     display: flex;
     >li{
       width: 33.333333%;
       text-align: center;
-      padding: 16px;
+      padding: 1.6rem;
     }
   }
 `;
+
+const Nav =()=>{
+  return (
+    <NavWrapper>
+      <ul>
+        <li>
+          <Link to="/tags">标签页</Link>
+        </li>
+        <li>
+          <Link to="/money">记账页</Link>
+        </li>
+        <li>
+          <Link to="/statistics">统计页</Link>
+        </li>
+      </ul>
+    </NavWrapper>
+  )
+}
+
 function App() {
   return (
     <Wrapper>
@@ -36,20 +54,7 @@ function App() {
           <Route path='*' element={<NotFound />} />
         </Routes>
       </Main>
-      <Nav>
-        <ul>
-          <li>
-            <Link to="/tags">标签页</Link>
-          </li>
-          <li>
-            <Link to="/money">记账页</Link>
-          </li>
-          <li>
-            <Link to="/statistics">统计页</Link>
-          </li>
-        </ul>
-      </Nav>
-
+      <Nav/>
     </Wrapper>
   );
 }
