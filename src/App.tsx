@@ -4,8 +4,12 @@ import Tags from './views/Tags';
 import Money from './views/Money';
 import Statistics from './views/Statistics';
 import NotFound from './views/NotFound';
+import styled from 'styled-components';
 
 
+const AppWrapper = styled.div`
+   color:#333;  
+`
 
 function App() {
   return (
