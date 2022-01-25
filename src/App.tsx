@@ -1,23 +1,12 @@
 import * as React from "react";
 import {Routes, Route, Navigate, Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Nav from './components/Nav';
+import Layout from 'components/Layout';
 
-const Wrapper = styled.div`
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-`;
-const Main = styled.div`
-   flex-grow:1;
-   overflow: auto;
-`;
 
 
 function App() {
   return (
-    <Wrapper>
-      <Main>
+
         <Routes>
           <Route path="tags" element={<Tags />} />
           <Route path="money" element={<Money />} />
@@ -25,9 +14,7 @@ function App() {
           <Route path="" element={<Navigate to="/money" />} />
           <Route path='*' element={<NotFound />} />
         </Routes>
-      </Main>
-      <Nav/>
-    </Wrapper>
+
   );
 }
 // App.js
@@ -39,26 +26,20 @@ function NotFound(){
 
 function Tags() {
   return (
-    <>
-      <h2>标签页面</h2>
-    </>
+    <Layout>标签页面</Layout>
   );
 }
 
 
 function Money() {
   return (
-    <>
-      <h2>记账页面</h2>
-    </>
+    <Layout>记账页面</Layout>
   );
 }
 
 function Statistics() {
   return (
-    <>
-      <h2>统计页面</h2>
-    </>
+    <Layout>统计页面</Layout>
   );
 }
 export default App;
