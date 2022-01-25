@@ -5,6 +5,7 @@ import Icon from './Icon';
 
 
 const NavWrapper = styled.nav`
+  background: #fff;
   line-height: 2.4rem;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.25);
 
