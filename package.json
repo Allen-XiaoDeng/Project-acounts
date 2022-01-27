@@ -1,6 +1,7 @@
 {
   "name": "momey",
   "version": "0.1.0",
+  "homepage": "https://allen-xiaodeng.github.io/acounts-website/",
   "private": true,
   "dependencies": {
     "@babel/core": "^7.16.0",
