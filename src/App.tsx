@@ -17,8 +17,8 @@ function App() {
   return (
     <AppWrapper>
       <Routes>
-        <Route path="tags" element={<Tags/>}  />
-        <Route path="tags/:id" element={<Tag />} />
+        <Route path="tags" element={<Tags/>}/>
+        <Route path="tags/:id" element={<Tag/>}/>
         <Route path="money" element={<Money/>}/>
         <Route path="statistics" element={<Statistics/>}/>
         <Route path="" element={<Navigate to="/money"/>}/>
