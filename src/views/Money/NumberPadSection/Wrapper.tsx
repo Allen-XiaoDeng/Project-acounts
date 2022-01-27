@@ -15,7 +15,7 @@ const Wrapper = styled.section`
     > .pad{
       > button{
         border: none; font-size: 1.8rem; float: left; width: 25%; height: 6.4rem;
-        &.ok{height: 12.8rem; float: right;}
+        &.Ok{height: 12.8rem; float: right;}
         &.zero{width:50%;}
         &:nth-child(1){
           background: #f2f2f2;

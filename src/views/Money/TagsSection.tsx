@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import React from 'react';
-import {useTags} from '../Tags/useTags';
+import {useTags} from '../../hooks/useTags';
 
 const Wrapper = styled.section`
   background: #ffffff;
